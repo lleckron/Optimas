@@ -20,7 +20,7 @@ public class TestRomanNumeralEntry {
 
     @Test
     public void TestInvalidCharacterInput() {
-        String romanNumeral = null;
+        String romanNumeral = "this is a sentence not a roman numeral 1234567890";
         boolean testBoolean = inputRomanNumeral.romanNumeralBelow3000(romanNumeral);
         Assertions.assertFalse(testBoolean);
     }
