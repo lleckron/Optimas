@@ -20,7 +20,7 @@ public class InputRomanNumeral {
     }
 
     public Boolean romanNumeralBelow3000(String romanNumeral) {
-        CharSequence INVALID_INPUT = "ABEFGHJKNOPQRSTUWYZ 0123456789,./;':\"\\[\\]\\{\\}=+-_)(*&^%$#@!";
+        CharSequence INVALID_INPUT = "ABEFGHJKNOPQRSTUWYZ 0123456789,./;':\"\\[\\]\\{\\}=+-_)(*&^%$#@!`~";
         boolean invalid = CharMatcher.anyOf(INVALID_INPUT).matchesAnyOf(romanNumeral);
         if(invalid){
             System.err.println("You have entered an invalid character. Please enter only roman numerals:");
