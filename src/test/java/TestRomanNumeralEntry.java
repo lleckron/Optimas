@@ -11,4 +11,12 @@ public class TestRomanNumeralEntry {
         Assertions.assertFalse(testBoolean);
     }
 
+    @Test
+    public void TestRomanNumeralStringBelowTenChars() {
+        InputRomanNumeral inputRomanNumeral = new InputRomanNumeral();
+        String romanNumeral = null;
+        boolean testBoolean = inputRomanNumeral.romanNumeralBelow3000(romanNumeral);
+        Assertions.assertFalse(testBoolean);
+    }
+
 }
