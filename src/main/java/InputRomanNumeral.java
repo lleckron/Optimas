@@ -19,10 +19,10 @@ public class InputRomanNumeral {
 
     public Boolean romanNumeralBelow3000(String romanNumeral) {
         System.out.println("Enter up to 10 roman numerals. Their value will be calculated.");
-        if ((romanNumeral.length() > 3) && (romanNumeral.substring(0,3).equals("MMM"))) {
+        if ((romanNumeral.length() > 3) && (romanNumeral.startsWith("MMM"))) {
             System.err.println("The roman numeral you have entered is over 3000. Please enter another number.");
             return false;
-        } else if((romanNumeral.length() > 6) && (romanNumeral.substring(0,6).equals("DDDDDD"))) {
+        } else if((romanNumeral.length() > 6) && (romanNumeral.startsWith("DDDDDD"))) {
             System.err.println("The roman numeral you have entered is over 3000. Please enter another number.");
             return false;
         } else if (romanNumeral.length() > 10) {
