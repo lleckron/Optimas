@@ -6,9 +6,9 @@ public class TestRomanNumeralEntry {
     @Test
     public void TestRomanNumeralBelow3000() {
         InputRomanNumeral inputRomanNumeral = new InputRomanNumeral();
-        String romanNumeral = null;
+        String romanNumeral = "DDDDDDI";
         boolean testBoolean = inputRomanNumeral.romanNumeralBelow3000(romanNumeral);
-        Assertions.assertEquals(false, testBoolean);
+        Assertions.assertFalse(testBoolean);
     }
 
 }
