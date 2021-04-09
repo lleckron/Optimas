@@ -22,8 +22,9 @@ public class TestRomanNumeralEntry {
     @Test
     public void TestRomanNumeralCalculator() {
         RomanNumeralCalculator romanNumeralCalculator = new RomanNumeralCalculator();
-        String romanNumeral = "not a roman numeral";
-        Assertions.assertEquals("",romanNumeral);
+        String romanNumeral = "XLVII";
+        int total = romanNumeralCalculator.calculateRomanNumeralString(romanNumeral);
+        Assertions.assertEquals(67,total);
     }
 
 }
