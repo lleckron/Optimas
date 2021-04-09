@@ -14,7 +14,7 @@ public class TestRomanNumeralEntry {
     @Test
     public void TestRomanNumeralStringBelowTenChars() {
         InputRomanNumeral inputRomanNumeral = new InputRomanNumeral();
-        String romanNumeral = null;
+        String romanNumeral = "IIIIIIIIIII";
         boolean testBoolean = inputRomanNumeral.romanNumeralBelow3000(romanNumeral);
         Assertions.assertFalse(testBoolean);
     }
