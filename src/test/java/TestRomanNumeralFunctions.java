@@ -1,7 +1,7 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class TestRomanNumeralEntry {
+public class TestRomanNumeralFunctions {
     InputRomanNumeral inputRomanNumeral = new InputRomanNumeral();
     RomanNumeralCalculator romanNumeralCalculator = new RomanNumeralCalculator();
     @Test
