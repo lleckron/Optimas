@@ -19,4 +19,11 @@ public class TestRomanNumeralEntry {
         Assertions.assertFalse(testBoolean);
     }
 
+    @Test
+    public void TestRomanNumeralCalculator() {
+        RomanNumeralCalculator romanNumeralCalculator = new RomanNumeralCalculator();
+        String romanNumeral = "not a roman numeral";
+        Assertions.assertEquals("",romanNumeral);
+    }
+
 }
